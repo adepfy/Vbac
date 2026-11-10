@@ -35,8 +35,8 @@ a:hover{color:#C8102E}
 .dotsr{background-image:radial-gradient(rgba(200,16,46,.14) 1.5px,transparent 1.5px);background-size:22px 22px}
 .lt .dot{background:rgba(18,10,11,.18)}
 .dots-row.lt.js .dot.on{background:#C8102E}
-.net{position:absolute;pointer-events:none;background:url(/images/bg01.png) no-repeat center/contain}
-.netr{position:absolute;pointer-events:none;z-index:-1;background:#C8102E;-webkit-mask:url(/images/bg01.png) no-repeat center/contain;mask:url(/images/bg01.png) no-repeat center/contain}
+.net{position:absolute;pointer-events:none;background:url(/vbac_next/images/bg01.png) no-repeat center/contain}
+.netr{position:absolute;pointer-events:none;z-index:-1;background:#C8102E;-webkit-mask:url(/vbac_next/images/bg01.png) no-repeat center/contain;mask:url(/vbac_next/images/bg01.png) no-repeat center/contain}
 .geo{position:absolute;pointer-events:none;display:block;line-height:0;animation:geof 9s ease-in-out infinite alternate}
 .geo.s2{animation-duration:12s;animation-delay:-4s}
 .geo.s3{animation:geor 24s linear infinite}

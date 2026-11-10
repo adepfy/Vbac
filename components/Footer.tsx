@@ -16,22 +16,22 @@ export default function Footer({ about }: { about: About }) {
 <span style={{ fontWeight: "600", color: "#C8102E" }}>
 {"หลักสูตร / สาขา"}
 </span>
-<a href="/#programs">
+<a href="/vbac_next/#programs">
 {"เทคโนโลยีสารสนเทศ"}
 </a>
-<a href="/#programs">
+<a href="/vbac_next/#programs">
 {"ธุรกิจดิจิทัล"}
 </a>
-<a href="/#programs">
+<a href="/vbac_next/#programs">
 {"ดิจิทัลกราฟิก"}
 </a>
-<a href="/#programs">
+<a href="/vbac_next/#programs">
 {"การตลาด"}
 </a>
-<a href="/#programs">
+<a href="/vbac_next/#programs">
 {"การบัญชี"}
 </a>
-<a href="/#programs">
+<a href="/vbac_next/#programs">
 {"ดูทั้ง 8 สาขา"}
 </a>
 </div>
@@ -39,16 +39,16 @@ export default function Footer({ about }: { about: About }) {
 <span style={{ fontWeight: "600", color: "#C8102E" }}>
 {"เกี่ยวกับวิทยาลัย"}
 </span>
-<a href="/about#history">
+<a href="/vbac_next/about#history">
 {"ประวัติวิทยาลัย"}
 </a>
-<a href="/about#vision">
+<a href="/vbac_next/about#vision">
 {"วิสัยทัศน์และพันธกิจ"}
 </a>
-<a href="/about#contact">
+<a href="/vbac_next/about#contact">
 {"แผนที่วิทยาลัย"}
 </a>
-<a href="/about#executives">
+<a href="/vbac_next/about#executives">
 {"ผู้บริหาร"}
 </a>
 </div>
@@ -71,7 +71,7 @@ export default function Footer({ about }: { about: About }) {
 </div>
 <div style={{ flex: "1.4 1 280px", display: "flex", flexDirection: "column", gap: "14px" }}>
 <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-<img src="/images/logo.png" alt="ตราวิทยาลัย VBAC" style={{ width: "60px", height: "56px", objectFit: "contain", display: "block" }} />
+<img src="/vbac_next/images/logo.png" alt="ตราวิทยาลัย VBAC" style={{ width: "60px", height: "56px", objectFit: "contain", display: "block" }} />
 <span style={{ display: "flex", flexDirection: "column", lineHeight: "1.25" }}>
 <span style={{ fontWeight: "700", fontSize: "18px", color: "#C8102E" }}>
 {"VBAC"}

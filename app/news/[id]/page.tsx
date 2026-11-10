@@ -29,7 +29,7 @@ export default async function NewsDetail({ params }: Props) {
       <FloatingContact about={about} />
       <Header />
       <main>
-        <PageHero title={news.title} crumbs={[{ label: 'หน้าแรก', href: '/' }, { label: 'ข่าวสาร', href: '/news' }, { label: news.title }]} />
+        <PageHero title={news.title} crumbs={[{ label: 'หน้าแรก', href: '/vbac_next/' }, { label: 'ข่าวสาร', href: '/vbac_next/news' }, { label: news.title }]} />
         <div className="nw-wrap nw-detail">
           <article className="nw-article">
             <span className="nw-date">{thaiDate(news.date, true)}</span>
@@ -39,13 +39,13 @@ export default async function NewsDetail({ params }: Props) {
               <img src={news.img} alt={news.title} className="nw-media" />
             )}
             {news.body && <p className="nw-body">{news.body}</p>}
-            <a href="/news" className="nw-all">← กลับไปหน้าข่าวทั้งหมด</a>
+            <a href="/vbac_next/news" className="nw-all">← กลับไปหน้าข่าวทั้งหมด</a>
           </article>
           {more.length > 0 && (
             <aside className="nw-more" aria-label="ข่าวอื่นๆ">
               <strong>ข่าวอื่นๆ</strong>
               {more.map((n) => (
-                <a key={n.id} href={`/news/${n.id}`} className="nw-item card">
+                <a key={n.id} href={`/vbac_next/news/${n.id}`} className="nw-item card">
                   <img src={n.img} alt="" loading="lazy" />
                   <span>
                     <span className="nw-date">{thaiDate(n.date)}</span>

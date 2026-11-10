@@ -157,27 +157,27 @@ export const idols: Idol[] = [
   {
     "name": "แสงอาทิตย์ ลูกทรายกองดิน",
     "role": "แชมป์มวยสากล WBA เอเชีย",
-    "img": "/images/idol1.jpg"
+    "img": "/vbac_next/images/idol1.jpg"
   },
   {
     "name": "ชัยดาเนีย ลูกทรายกองดิน",
     "role": "นักมวยหญิงระดับแชมป์",
-    "img": "/images/idol2.jpg"
+    "img": "/vbac_next/images/idol2.jpg"
   },
   {
     "name": "ปกรณ์ เสือเพชร",
     "role": "เจ้าของร้าน Bascutz Hairstyle",
-    "img": "/images/idol3.jpg"
+    "img": "/vbac_next/images/idol3.jpg"
   },
   {
     "name": "เกียรติศักดิ์ นะเป้า",
     "role": "เจ้าของบริษัทอุปกรณ์ไอที",
-    "img": "/images/idol4.jpg"
+    "img": "/vbac_next/images/idol4.jpg"
   },
   {
     "name": "วราภรณ์ ปานนาค",
     "role": "เจ้าของร้านค้าออนไลน์",
-    "img": "/images/idol5.jpg"
+    "img": "/vbac_next/images/idol5.jpg"
   }
 ];
 

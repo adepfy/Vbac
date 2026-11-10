@@ -90,7 +90,7 @@ export default function Showcase() {
 {"Tuition Fees"}
 </span>
 </a>
-<a href="/register" className="card" style={{ gridColumn: "span 3", borderRadius: "20px", background: "#FFF3CC", padding: "16px 20px", display: "flex", alignItems: "center", gap: "16px" }}>
+<a href="/vbac_next/register" className="card" style={{ gridColumn: "span 3", borderRadius: "20px", background: "#FFF3CC", padding: "16px 20px", display: "flex", alignItems: "center", gap: "16px" }}>
 <span style={{ fontWeight: "700", fontSize: "30px", color: ACCENT, lineHeight: "1" }}>
 {"Dek70"}
 </span>
@@ -103,7 +103,7 @@ export default function Showcase() {
 </a>
 </div>
 <a href="#update" className="card" style={{ flex: "1.3 1 460px", minWidth: "0", borderRadius: "24px", overflow: "hidden", background: "#120A0B", color: "#FFFFFF", display: "flex", flexDirection: "column" }}>
-<img src="/images/act1.jpg" alt="นักศึกษาแข่งขัน E-Sports" style={{ width: "100%", height: "280px", objectFit: "cover", display: "block" }} />
+<img src="/vbac_next/images/act1.jpg" alt="นักศึกษาแข่งขัน E-Sports" style={{ width: "100%", height: "280px", objectFit: "cover", display: "block" }} />
 <div style={{ padding: "22px 24px", display: "flex", flexDirection: "column", gap: "8px" }}>
 <span style={{ alignSelf: "flex-start", background: "#FFC21A", color: "#120A0B", borderRadius: "999px", padding: "3px 12px", fontSize: "13px", fontWeight: "600" }}>
 {"ข่าวเด่น"}

@@ -21,5 +21,5 @@ export async function submitRegistration(_prev: RegisterState, formData: FormDat
     console.error('[register] save failed:', err);
     return { errors: {}, values, message: 'ขออภัย ระบบบันทึกข้อมูลขัดข้อง กรุณาลองใหม่อีกครั้ง หรือติดต่อฝ่ายแนะแนวทางโทรศัพท์' };
   }
-  redirect(`/register/complete?level=${data.level}`);
+  redirect(`/vbac_next/register/complete?level=${data.level}`);
 }

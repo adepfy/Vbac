@@ -6,7 +6,7 @@ export default function CategoryCards() {
 <section aria-label="เกี่ยวกับวิทยาลัย" style={{ position: "relative", zIndex: "4", maxWidth: "1180px", margin: "8px auto 0", padding: "0 20px" }}>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(165px, 1fr))", gap: "14px" }}>
 <a href="#atmosphere" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
-<img src="/images/hero.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+<img src="/vbac_next/images/hero.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
 <span aria-hidden="true" style={{ position: "absolute", inset: "0", background: "linear-gradient(to top, rgba(140,8,28,.96) 18%, rgba(200,16,46,.55) 100%)" }}>
 </span>
 <span style={{ position: "relative", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -32,7 +32,7 @@ export default function CategoryCards() {
 </span>
 </a>
 <a href="#cooperation" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
-<img src="/images/experiment.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+<img src="/vbac_next/images/experiment.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
 <span aria-hidden="true" style={{ position: "absolute", inset: "0", background: "linear-gradient(to top, rgba(140,8,28,.96) 18%, rgba(200,16,46,.55) 100%)" }}>
 </span>
 <span style={{ position: "relative", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -58,7 +58,7 @@ export default function CategoryCards() {
 </span>
 </a>
 <a href="#personnel" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
-<img src="/images/expert.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+<img src="/vbac_next/images/expert.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
 <span aria-hidden="true" style={{ position: "absolute", inset: "0", background: "linear-gradient(to top, rgba(140,8,28,.96) 18%, rgba(200,16,46,.55) 100%)" }}>
 </span>
 <span style={{ position: "relative", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -86,7 +86,7 @@ export default function CategoryCards() {
 </span>
 </a>
 <a href="#gallery" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
-<img src="/images/act2.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+<img src="/vbac_next/images/act2.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
 <span aria-hidden="true" style={{ position: "absolute", inset: "0", background: "linear-gradient(to top, rgba(140,8,28,.96) 18%, rgba(200,16,46,.55) 100%)" }}>
 </span>
 <span style={{ position: "relative", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -113,7 +113,7 @@ export default function CategoryCards() {
 </span>
 </a>
 <a href="#care" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
-<img src="/images/learning.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+<img src="/vbac_next/images/learning.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
 <span aria-hidden="true" style={{ position: "absolute", inset: "0", background: "linear-gradient(to top, rgba(140,8,28,.96) 18%, rgba(200,16,46,.55) 100%)" }}>
 </span>
 <span style={{ position: "relative", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -139,7 +139,7 @@ export default function CategoryCards() {
 </span>
 </a>
 <a href="#elearning" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
-<img src="/images/act1.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+<img src="/vbac_next/images/act1.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
 <span aria-hidden="true" style={{ position: "absolute", inset: "0", background: "linear-gradient(to top, rgba(140,8,28,.96) 18%, rgba(200,16,46,.55) 100%)" }}>
 </span>
 <span style={{ position: "relative", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>

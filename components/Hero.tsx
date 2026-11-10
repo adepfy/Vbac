@@ -87,7 +87,7 @@ export default function Hero({ banners }: { banners: Banner[] }) {
 {"8 สาขาวิชาที่ตลาดงานต้องการ เรียนจริง ลงมือทำจริงกับผู้เชี่ยวชาญ"}
 </p>
 <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-<a href="/register" style={{ height: "50px", padding: "0 26px", borderRadius: "999px", background: "#FFC21A", color: "#120A0B", display: "inline-flex", alignItems: "center", gap: "10px", fontWeight: "700", fontSize: "18px", boxShadow: "0 6px 0 #B8860B" }}>
+<a href="/vbac_next/register" style={{ height: "50px", padding: "0 26px", borderRadius: "999px", background: "#FFC21A", color: "#120A0B", display: "inline-flex", alignItems: "center", gap: "10px", fontWeight: "700", fontSize: "18px", boxShadow: "0 6px 0 #B8860B" }}>
 {"สมัครเรียนออนไลน์ "}
 <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
 <path d="M5 12h14M13 6l6 6-6 6" />

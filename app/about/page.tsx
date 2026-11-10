@@ -42,7 +42,7 @@ export default async function AboutPage() {
         <PageHero
           title="เกี่ยวกับวิทยาลัย"
           subtitle={`วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC) สร้างคนคุณภาพมากว่า ${years} ปี — College for The NEXT Generation`}
-          crumbs={[{ label: 'หน้าแรก', href: '/' }, { label: 'เกี่ยวกับวิทยาลัย' }]}
+          crumbs={[{ label: 'หน้าแรก', href: '/vbac_next/' }, { label: 'เกี่ยวกับวิทยาลัย' }]}
         />
 
         {/* แถบเมนูย่อย */}
@@ -76,7 +76,7 @@ export default async function AboutPage() {
               </div>
             </div>
             <figure className="ab-photo">
-              <img src="/images/grad.jpg" alt="บัณฑิต VBAC ในพิธีรับประกาศนียบัตร" />
+              <img src="/vbac_next/images/grad.jpg" alt="บัณฑิต VBAC ในพิธีรับประกาศนียบัตร" />
               <figcaption>พิธีรับประกาศนียบัตร VBAC</figcaption>
             </figure>
           </div>
@@ -134,7 +134,7 @@ export default async function AboutPage() {
           <SectionTitle id="symbol" accent="ประจำวิทยาลัย">สัญลักษณ์</SectionTitle>
           <div className="ab-wrap ab-split ab-symbol">
             <div className="ab-logo">
-              <img src="/images/logo.png" alt="ตราสัญลักษณ์วิทยาลัย VBAC" />
+              <img src="/vbac_next/images/logo.png" alt="ตราสัญลักษณ์วิทยาลัย VBAC" />
             </div>
             <div className="ab-col">
               <p className="ab-body">{symbol.intro}</p>

@@ -3,12 +3,12 @@
 import { useEffect, useState } from 'react';
 
 const LINKS = [
-  { href: '/#programs', label: 'หลักสูตร' },
-  { href: '/about', label: 'เกี่ยวกับเรา' },
-  { href: '/news', label: 'ข่าวสาร & กิจกรรม' },
-  { href: '/#faq', label: 'กยศ.' },
-  { href: '/about#contact', label: 'ชำระเงิน' },
-  { href: '/about#contact', label: 'ติดต่อเรา' },
+  { href: '/vbac_next/#programs', label: 'หลักสูตร' },
+  { href: '/vbac_next/about', label: 'เกี่ยวกับเรา' },
+  { href: '/vbac_next/news', label: 'ข่าวสาร & กิจกรรม' },
+  { href: '/vbac_next/#faq', label: 'กยศ.' },
+  { href: '/vbac_next/about#contact', label: 'ชำระเงิน' },
+  { href: '/vbac_next/about#contact', label: 'ติดต่อเรา' },
 ];
 
 export default function Header() {
@@ -33,8 +33,8 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="hd-bar">
-        <a href="/" className="hd-brand" onClick={() => setOpen(false)}>
-          <img src="/images/logo.png" alt="ตราวิทยาลัย VBAC" width={56} height={52} />
+        <a href="/vbac_next/" className="hd-brand" onClick={() => setOpen(false)}>
+          <img src="/vbac_next/images/logo.png" alt="ตราวิทยาลัย VBAC" width={56} height={52} />
           <span>
             <strong>วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC)</strong>
             <small>Viboon Business Administration Technological College Ramintra</small>
@@ -47,7 +47,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="hd-actions">
-          <a href="/register" className="hd-apply">
+          <a href="/vbac_next/register" className="hd-apply">
             สมัครเรียน
             <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
@@ -74,7 +74,7 @@ export default function Header() {
               <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6" /></svg>
             </a>
           ))}
-          <a href="/register" className="mm-apply" onClick={() => setOpen(false)}>สมัครเรียนออนไลน์</a>
+          <a href="/vbac_next/register" className="mm-apply" onClick={() => setOpen(false)}>สมัครเรียนออนไลน์</a>
         </nav>
       </div>
       {open && <button type="button" className="mm-backdrop" aria-label="ปิดเมนู" onClick={() => setOpen(false)} />}

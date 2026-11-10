@@ -10,7 +10,7 @@ export default function News({ items }: { items: NewsItem[] }) {
       <SectionTitle id="h-news" accent=" NEWS">VBAC</SectionTitle>
       <div className="nw-wrap">
         <div className="nw-grid">
-          <a href={`/news/${first.id}`} className="nw-feature card">
+          <a href={`/vbac_next/news/${first.id}`} className="nw-feature card">
             <img src={first.img} alt="" loading="lazy" />
             <span className="nw-shade" aria-hidden="true" />
             <span className="nw-feature-body">
@@ -22,7 +22,7 @@ export default function News({ items }: { items: NewsItem[] }) {
           </a>
           <div className="nw-list">
             {rest.map((n) => (
-              <a key={n.id} href={`/news/${n.id}`} className="nw-item card">
+              <a key={n.id} href={`/vbac_next/news/${n.id}`} className="nw-item card">
                 <img src={n.img} alt="" loading="lazy" />
                 <span>
                   <span className="nw-date">{thaiDate(n.date)}</span>
@@ -33,7 +33,7 @@ export default function News({ items }: { items: NewsItem[] }) {
             ))}
           </div>
         </div>
-        <a href="/news" className="nw-all">ดูข่าวทั้งหมด →</a>
+        <a href="/vbac_next/news" className="nw-all">ดูข่าวทั้งหมด →</a>
       </div>
     </section>
   );

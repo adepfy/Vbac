@@ -16,7 +16,7 @@ export default function Cta() {
 </p>
 </div>
 <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-<a href="/register" style={{ height: "58px", padding: "0 28px", borderRadius: "999px", background: "#FFC21A", color: "#120A0B", display: "inline-flex", alignItems: "center", fontWeight: "700", fontSize: "18px" }}>
+<a href="/vbac_next/register" style={{ height: "58px", padding: "0 28px", borderRadius: "999px", background: "#FFC21A", color: "#120A0B", display: "inline-flex", alignItems: "center", fontWeight: "700", fontSize: "18px" }}>
 {"สมัครเรียนออนไลน์"}
 </a>
 <a href="#line" style={{ height: "58px", padding: "0 26px", borderRadius: "999px", background: "#06C755", color: "#0B2A16", display: "inline-flex", alignItems: "center", fontWeight: "700", fontSize: "18px" }}>

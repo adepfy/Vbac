@@ -15,12 +15,12 @@ export default async function NewsPage() {
       <FloatingContact about={about} />
       <Header />
       <main>
-        <PageHero title="ข่าวสาร VBAC NEWS" subtitle="ข่าวสาร กิจกรรม และความภาคภูมิใจของชาว VBAC" crumbs={[{ label: 'หน้าแรก', href: '/' }, { label: 'ข่าวสาร' }]} />
+        <PageHero title="ข่าวสาร VBAC NEWS" subtitle="ข่าวสาร กิจกรรม และความภาคภูมิใจของชาว VBAC" crumbs={[{ label: 'หน้าแรก', href: '/vbac_next/' }, { label: 'ข่าวสาร' }]} />
         <div className="nw-wrap nw-page">
           {news.length === 0 && <p className="nw-empty">ยังไม่มีข่าวในระบบ</p>}
           <div className="nw-cards">
             {news.map((n) => (
-              <a key={n.id} href={`/news/${n.id}`} className="nw-card card">
+              <a key={n.id} href={`/vbac_next/news/${n.id}`} className="nw-card card">
                 <img src={n.img} alt="" loading="lazy" />
                 <span className="nw-card-body">
                   <span className="nw-date">{thaiDate(n.date)}</span>

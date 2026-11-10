@@ -56,9 +56,9 @@ export function getAbout(): Promise<About> {
 /* ---------- banner (สไลด์หน้าแรก) ---------- */
 export type Banner = { img: string; link: string; alt: string };
 const BANNER_FALLBACK: Banner[] = [
-  { img: '/images/poster.jpg', link: '', alt: 'VBAC รับสมัคร ปวช./ปวส. 8 สาขา' },
-  { img: '/images/hero.jpg', link: '', alt: 'นักศึกษา VBAC ทำงานกลุ่มในห้องสมุด' },
-  { img: '/images/act1.jpg', link: '', alt: 'นักศึกษาแข่งขัน E-Sports' },
+  { img: '/vbac_next/images/poster.jpg', link: '', alt: 'VBAC รับสมัคร ปวช./ปวส. 8 สาขา' },
+  { img: '/vbac_next/images/hero.jpg', link: '', alt: 'นักศึกษา VBAC ทำงานกลุ่มในห้องสมุด' },
+  { img: '/vbac_next/images/act1.jpg', link: '', alt: 'นักศึกษาแข่งขัน E-Sports' },
 ];
 export function getBanners(): Promise<Banner[]> {
   return safe('banner', async () => {
@@ -169,7 +169,7 @@ function mapNews(r: NewsRow): NewsItem {
     title: (r.news_header || '').trim(),
     summary: body.replace(/\s+/g, ' ').slice(0, 140),
     body,
-    img: (r.news_type === 'img' && mediaUrlIfExists(`news/${r.news_file}`)) || '/images/act1.jpg',
+    img: (r.news_type === 'img' && mediaUrlIfExists(`news/${r.news_file}`)) || '/vbac_next/images/act1.jpg',
     video: (r.news_type === 'vdo' && mediaUrlIfExists(`vdo/${r.news_file}`)) || '',
     date: String(r.news_create || r.news_update).slice(0, 10),
   };

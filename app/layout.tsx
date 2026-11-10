@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'VBAC — วิทยาลัยวิบูลย์บริหารธุรกิจ',
   description:
     'วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา เปิดรับสมัคร ปวช. / ปวส. 8 สาขาวิชา — College for The NEXT Generation',
-  icons: { icon: '/images/logo.png' },
+  icons: { icon: '/vbac_next/images/logo.png' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

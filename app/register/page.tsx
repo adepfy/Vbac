@@ -27,7 +27,7 @@ export default async function RegisterPage({ searchParams }: { searchParams: Pro
         <PageHero
           title={promotion ? 'สมัครเรียนออนไลน์ (โปรโมชั่น)' : 'สมัครเรียนออนไลน์'}
           subtitle="สมัคร ปวช. / ปวส. ได้ภายใน 5 นาที เจ้าหน้าที่จะติดต่อกลับเพื่อยืนยันข้อมูล"
-          crumbs={[{ label: 'หน้าแรก', href: '/' }, { label: 'สมัครเรียน' }]}
+          crumbs={[{ label: 'หน้าแรก', href: '/vbac_next/' }, { label: 'สมัครเรียน' }]}
         />
         <div className="rg-layout">
           <div className="rg-main">
@@ -57,7 +57,7 @@ export default async function RegisterPage({ searchParams }: { searchParams: Pro
             <div className="rg-sidecard">
               <strong>สอบถามวิทยาลัย</strong>
               <p>โทร <a href={`tel:${about.telephone.split(/[-–]/)[0].replace(/\s+/g, '')}`}>{about.telephone}</a></p>
-              <p><a href="/about#contact">แผนที่และการเดินทาง →</a></p>
+              <p><a href="/vbac_next/about#contact">แผนที่และการเดินทาง →</a></p>
             </div>
           </aside>
         </div>

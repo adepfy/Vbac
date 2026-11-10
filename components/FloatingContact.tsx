@@ -5,7 +5,7 @@ export default function FloatingContact({ about }: { about: About }) {
   return (
     <>
 <div aria-label="ติดต่อด่วน" style={{ position: "fixed", right: "14px", top: "50%", transform: "translateY(-50%)", zIndex: "30", display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "8px" }}>
-<a href="/register" style={{ height: "44px", padding: "0 16px", borderRadius: "999px", background: ACCENT, color: "#FFFFFF", display: "flex", alignItems: "center", fontWeight: "600", fontSize: "14px", boxShadow: "0 8px 20px -8px rgba(120,10,25,.6)" }}>
+<a href="/vbac_next/register" style={{ height: "44px", padding: "0 16px", borderRadius: "999px", background: ACCENT, color: "#FFFFFF", display: "flex", alignItems: "center", fontWeight: "600", fontSize: "14px", boxShadow: "0 8px 20px -8px rgba(120,10,25,.6)" }}>
 {"สมัครเรียน"}
 </a>
 <a href={`tel:${about.telephone.split(/[-–]/)[0].replace(/\s+/g, "")}`} aria-label="โทรหาวิทยาลัย" style={{ width: "44px", height: "44px", borderRadius: "999px", background: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 8px 20px -8px rgba(18,10,11,.4)" }}>

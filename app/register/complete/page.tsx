@@ -14,7 +14,7 @@ export default async function RegisterComplete({ searchParams }: { searchParams:
     <div style={{ fontFamily: "var(--font-kanit), 'Helvetica Neue', Helvetica, Arial, sans-serif", color: '#120A0B', background: '#FFFFFF', width: '100%', overflowX: 'clip' }}>
       <Header />
       <main>
-        <PageHero title="สมัครเรียนเรียบร้อย" crumbs={[{ label: 'หน้าแรก', href: '/' }, { label: 'สมัครเรียน', href: '/register' }, { label: 'เรียบร้อย' }]} />
+        <PageHero title="สมัครเรียนเรียบร้อย" crumbs={[{ label: 'หน้าแรก', href: '/vbac_next/' }, { label: 'สมัครเรียน', href: '/vbac_next/register' }, { label: 'เรียบร้อย' }]} />
         <section className="rg-done">
           <div className="rg-done-icon" aria-hidden="true">
             <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
@@ -25,7 +25,7 @@ export default async function RegisterComplete({ searchParams }: { searchParams:
             <span key={h.tel}>{i > 0 && ' · '}{h.name} <a href={`tel:${h.tel.replace(/\D/g, '')}`}>{h.tel}</a></span>
           ))}</p>
           <div className="rg-done-actions">
-            <a href="/" className="rg-btn">กลับสู่หน้าแรก</a>
+            <a href="/vbac_next/" className="rg-btn">กลับสู่หน้าแรก</a>
             <a href={about.line} target="_blank" rel="noopener noreferrer" className="rg-btn rg-btn-line">แอด LINE วิทยาลัย</a>
           </div>
         </section>
