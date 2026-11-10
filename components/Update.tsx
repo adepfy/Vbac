@@ -1,0 +1,110 @@
+import { Fragment } from 'react';
+import { ACCENT } from '@/data/site';
+import type { Event } from '@/data/site';
+
+export default function Update({ events, monthLabel }: { events: Event[]; monthLabel: string }) {
+  return (
+    <>
+<div aria-hidden="true" style={{ lineHeight: "0", marginTop: "72px", background: "transparent" }}>
+<svg viewBox="0 0 1440 120" preserveAspectRatio="none" style={{ width: "100%", height: "110px", display: "block" }}>
+<path d="M0 40 C 120 6 240 6 360 40 C 480 74 600 74 720 40 C 840 6 960 6 1080 40 C 1200 74 1320 74 1440 40 L1440 120 L0 120 Z" fill="#F8C9D0" />
+<path d="M0 82 C 160 40 320 40 480 72 C 640 104 800 104 960 72 C 1120 40 1280 40 1440 78 L1440 120 L0 120 Z" fill="#FDEEEF" />
+</svg>
+</div>
+<div style={{ background: "#FDEEEF", paddingBottom: "40px", position: "relative", overflow: "hidden", isolation: "isolate" }}>
+<div className="netr" aria-hidden="true" style={{ left: "-60px", top: "20px", transform: "scaleX(-1)", width: "560px", height: "385px", opacity: ".12" }}>
+</div>
+<span className="geo " aria-hidden="true" style={{ right: "4%", top: "150px", opacity: ".3", zIndex: "-1" }}>
+<svg width="74" height="24" viewBox="0 0 74 24">
+<path d="M3 12c8-10 14 10 22 0s14 10 22 0 14 10 22 0" fill="none" stroke="#C8102E" strokeWidth="3.5" strokeLinecap="round" />
+</svg>
+</span>
+<span className="geo s2" aria-hidden="true" style={{ left: "5%", bottom: "70px", opacity: ".6", zIndex: "-1" }}>
+<svg width="44" height="44" viewBox="0 0 44 44">
+<circle cx="22" cy="22" r="16" fill="none" stroke="#F2A900" strokeWidth="4" />
+</svg>
+</span>
+<span className="geo s3" aria-hidden="true" style={{ left: "10%", top: "120px", opacity: ".3", zIndex: "-1" }}>
+<svg width="30" height="30" viewBox="0 0 30 30">
+<path d="M15 4v22M4 15h22" stroke="#C8102E" strokeWidth="4" strokeLinecap="round" />
+</svg>
+</span>
+<span className="geo " aria-hidden="true" style={{ right: "8%", bottom: "40px", opacity: ".5", zIndex: "-1" }}>
+<svg width="60" height="60" viewBox="0 0 60 60">
+<circle cx="6" cy="6" r="2.5" fill="#F2A900" />
+<circle cx="6" cy="22" r="2.5" fill="#F2A900" />
+<circle cx="6" cy="38" r="2.5" fill="#F2A900" />
+<circle cx="6" cy="54" r="2.5" fill="#F2A900" />
+<circle cx="22" cy="6" r="2.5" fill="#F2A900" />
+<circle cx="22" cy="22" r="2.5" fill="#F2A900" />
+<circle cx="22" cy="38" r="2.5" fill="#F2A900" />
+<circle cx="22" cy="54" r="2.5" fill="#F2A900" />
+<circle cx="38" cy="6" r="2.5" fill="#F2A900" />
+<circle cx="38" cy="22" r="2.5" fill="#F2A900" />
+<circle cx="38" cy="38" r="2.5" fill="#F2A900" />
+<circle cx="38" cy="54" r="2.5" fill="#F2A900" />
+<circle cx="54" cy="6" r="2.5" fill="#F2A900" />
+<circle cx="54" cy="22" r="2.5" fill="#F2A900" />
+<circle cx="54" cy="38" r="2.5" fill="#F2A900" />
+<circle cx="54" cy="54" r="2.5" fill="#F2A900" />
+</svg>
+</span>
+<section id="update" aria-labelledby="h-update" style={{ paddingTop: "24px" }}>
+<div style={{ position: "relative", height: "64px", marginBottom: "32px" }}>
+<div aria-hidden="true" className="tbar" style={{ position: "absolute", inset: "0" }} />
+<div style={{ position: "relative", maxWidth: "1180px", height: "100%", margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "12px" }}>
+<h2 id="h-update" style={{ margin: "0", fontWeight: "700", fontSize: "32px" }}>
+<span style={{ color: ACCENT }}>
+{"VBAC"}
+</span>
+{" Update"}
+</h2>
+<span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "999px", background: ACCENT, color: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "center" }}>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+<path d="M9 6l6 6-6 6" />
+</svg>
+</span>
+</div>
+</div>
+<div style={{ maxWidth: "1180px", margin: "0 auto", padding: "0 20px", display: "flex", flexWrap: "wrap", gap: "16px" }}>
+<div style={{ flex: "1 1 220px", maxWidth: "280px", display: "flex", flexDirection: "column", gap: "10px" }}>
+<div style={{ borderRadius: "20px", background: ACCENT, color: "#FFFFFF", padding: "22px", display: "flex", flexDirection: "column", gap: "6px" }}>
+<span style={{ fontSize: "14px", color: "#FFE4E8" }}>{"ปฏิทินกิจกรรม"}</span>
+<strong style={{ fontSize: "26px", lineHeight: "1.2" }}>{monthLabel}</strong>
+<span style={{ fontSize: "14px", color: "#FFE4E8" }}>{`${events.filter((e) => e.status !== 'ผ่านไปแล้ว').length} กิจกรรมที่กำลังจะมาถึง`}</span>
+</div>
+<a href="#news" style={{ minHeight: "56px", borderRadius: "16px", border: "1px solid #ECE3DE", background: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 20px", fontWeight: "500" }}>
+{"ข่าวสาร VBAC NEWS"}
+<span aria-hidden="true">{"→"}</span>
+</a>
+</div>
+<div style={{ flex: "999 1 560px", minWidth: "0", display: "flex", flexDirection: "column", gap: "10px" }}>
+{events.map((e, idx) => (<Fragment key={idx}>
+<div style={{ display: "flex", alignItems: "center", gap: "22px", padding: "14px 22px", borderRadius: "16px", background: e.bg, border: "1px solid #ECE3DE", opacity: e.opacity }}>
+<span style={{ display: "flex", alignItems: "baseline", gap: "4px", width: "104px", flexShrink: "0" }}>
+<span style={{ fontWeight: "700", fontSize: "32px", color: e.fg, lineHeight: "1" }}>
+{e.day}
+</span>
+<span style={{ fontSize: "13px", color: "#6B5F5A" }}>
+{e.month}
+</span>
+</span>
+<span style={{ display: "flex", flexDirection: "column", gap: "2px", minWidth: "0" }}>
+<span style={{ fontWeight: "600", fontSize: "17px" }}>
+{e.title}
+</span>
+<span style={{ fontSize: "13px", color: "#6B5F5A" }}>
+{e.status}
+</span>
+</span>
+</div>
+</Fragment>))}
+</div>
+</div>
+</section>
+</div>
+<div aria-hidden="true" style={{ height: "72px", background: "#FDEEEF" }}>
+</div>
+    </>
+  );
+}
