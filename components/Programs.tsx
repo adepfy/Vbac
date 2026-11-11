@@ -68,18 +68,18 @@ export default function Programs() {
 </div>
 <div style={{ maxWidth: "1180px", margin: "0 auto", padding: "0 20px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "14px" }}>
 {programs.map((p, idx) => (<Fragment key={idx}>
-<a href="#program" className="card" style={{ borderRadius: "24px", background: p.color, color: "#FFFFFF", padding: "22px", display: "flex", flexDirection: "column", gap: "16px", minHeight: "180px", position: "relative", overflow: "hidden" }}>
-<span aria-hidden="true" style={{ position: "absolute", right: "-8px", bottom: "-30px", fontWeight: "700", fontSize: "110px", lineHeight: "1", color: "rgba(255,255,255,.13)" }}>
+<a href="#program" className="program-card card" style={{ background: p.color }}>
+<span className="program-card-mark" aria-hidden="true">
 {p.code}
 </span>
-<span style={{ position: "relative", alignSelf: "flex-start", fontWeight: "700", fontSize: "14px", color: p.color, background: "#FFFFFF", borderRadius: "10px", padding: "5px 12px" }}>
+<span className="program-card-code" style={{ color: p.color }}>
 {p.code}
 </span>
-<span style={{ position: "relative", marginTop: "auto", display: "flex", flexDirection: "column", gap: "4px" }}>
-<span style={{ fontWeight: "600", fontSize: "21px", lineHeight: "1.3" }}>
+<span className="program-card-copy">
+<span className="program-card-name">
 {p.th}
 </span>
-<span style={{ fontSize: "14px", color: "rgba(255,255,255,.9)" }}>
+<span className="program-card-en">
 {p.en}
 </span>
 </span>

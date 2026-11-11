@@ -36,7 +36,8 @@ export default function Header() {
         <a href="/vbac_next/" className="hd-brand" onClick={() => setOpen(false)}>
           <img src="/vbac_next/images/logo.png" alt="ตราวิทยาลัย VBAC" width={56} height={52} />
           <span>
-            <strong>วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC)</strong>
+            <strong className="hd-brand-full">วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC)</strong>
+            <strong className="hd-brand-short">วิทยาลัย VBAC</strong>
             <small>Viboon Business Administration Technological College Ramintra</small>
             <em>College for The NEXT Generation</em>
           </span>
