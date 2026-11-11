@@ -223,6 +223,23 @@ html{scroll-behavior:smooth}
 /* แบนเนอร์จากฐานข้อมูลเป็นภาพจัตุรัส: แสดงเต็มภาพ + พื้นหลังเบลอจากภาพเดียวกัน */
 .bn-blur{position:absolute;inset:-24px;background-size:cover;background-position:center;filter:blur(22px) saturate(1.2);opacity:.85}
 
+/* ---------- compact floating contact buttons on phones ---------- */
+.floating-contact{right:12px!important;gap:6px!important}
+.floating-contact .fc-register{height:36px!important;padding:0 12px!important;font-size:13px!important;box-shadow:0 5px 14px -6px rgba(120,10,25,.6)!important}
+.floating-contact .fc-icon{width:36px!important;height:36px!important;box-shadow:0 4px 12px -6px rgba(18,10,11,.4)!important}
+.floating-contact .fc-icon svg{width:16px;height:16px}
+@media (max-width:640px){
+  .floating-contact{right:7px!important;gap:4px!important}
+  .floating-contact .fc-register{height:30px!important;padding:0 9px!important;font-size:11px!important;box-shadow:0 4px 10px -6px rgba(120,10,25,.6)!important}
+  .floating-contact .fc-icon{width:32px!important;height:32px!important;box-shadow:0 3px 9px -5px rgba(18,10,11,.4)!important}
+  .floating-contact .fc-icon svg{width:14px;height:14px}
+}
+@media (max-width:380px){
+  .floating-contact{right:5px!important;gap:3px!important}
+  .floating-contact .fc-icon{width:30px!important;height:30px!important}
+  .floating-contact .fc-icon svg{width:13px;height:13px}
+}
+
 /* ---------- header + mobile menu ---------- */
 .site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #ECE3DE}
 .hd-bar{max-width:1240px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:24px;position:relative;z-index:2}
