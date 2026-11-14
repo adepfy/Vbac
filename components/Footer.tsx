@@ -56,7 +56,7 @@ export default function Footer({ about }: { about: About }) {
 <span style={{ fontWeight: "600", color: "#C8102E" }}>
 {"บริการ"}
 </span>
-<a href="#loan">
+<a href="/vbac_next/loan">
 {"กองทุน กยศ."}
 </a>
 <a href="#payment">

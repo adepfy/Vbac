@@ -55,7 +55,7 @@ export default function Showcase() {
 {"Scholarship"}
 </span>
 </a>
-<a href="#loan" className="card" style={{ background: "#A30D25", color: "#FFFFFF", borderRadius: "20px", padding: "18px 12px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "8px", textAlign: "center", minHeight: "120px" }}>
+<a href="/vbac_next/loan" className="card" style={{ background: "#A30D25", color: "#FFFFFF", borderRadius: "20px", padding: "18px 12px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "8px", textAlign: "center", minHeight: "120px" }}>
 <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
 <rect x="3" y="6" width="18" height="12" rx="2" />
 <circle cx="12" cy="12" r="2.5" />

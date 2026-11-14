@@ -29,3 +29,11 @@ export function mediaUrlIfExists(path: string): string | null {
   }
   return mediaUrl(path);
 }
+
+/**
+ * เหมือน mediaUrlIfExists แต่ถ้าไม่มีไฟล์ในเครื่อง (โหมด /legacy) จะชี้ไปที่เว็บจริงแทน
+ * ใช้กับไฟล์เอกสาร/รูปประกอบที่ต้องมีลิงก์เสมอ เช่น PDF ของหน้า กยศ.
+ */
+export function mediaUrlOrLive(path: string): string {
+  return mediaUrlIfExists(path) ?? `https://www.vbac.ac.th/${encodePath(path)}`;
+}

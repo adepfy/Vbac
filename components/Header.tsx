@@ -6,7 +6,7 @@ const LINKS = [
   { href: '/vbac_next/#programs', label: 'หลักสูตร' },
   { href: '/vbac_next/about', label: 'เกี่ยวกับเรา' },
   { href: '/vbac_next/news', label: 'ข่าวสาร & กิจกรรม' },
-  { href: '/vbac_next/#faq', label: 'กยศ.' },
+  { href: '/vbac_next/loan', label: 'กยศ.' },
   { href: '/vbac_next/about#contact', label: 'ชำระเงิน' },
   { href: '/vbac_next/about#contact', label: 'ติดต่อเรา' },
 ];
