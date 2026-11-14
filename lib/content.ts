@@ -1,6 +1,6 @@
 import 'server-only';
 import { isDbConfigured, query } from './db';
-import { mediaUrlIfExists } from './media';
+import { mediaUrlIfExists, mediaUrlOrLive } from './media';
 import * as fallback from '@/data/site';
 import type { Event, Idol, Program } from '@/data/site';
 
@@ -314,4 +314,50 @@ export async function getStaff(): Promise<Staff> {
     },
     { executives, deputies: [], supervisors: [], teachers: [], structure: null },
   );
+}
+
+/* ---------- หลักสูตร (หน้า /programs/[slug]) — ตาราง major + major_gallery ---------- */
+export type MajorDetail = {
+  name: string;
+  description: string;
+  roadmap: string | null;
+  ability: string | null;
+  videos: string[];
+  gallery: string[];
+};
+const MAJOR_EMPTY: MajorDetail = { name: '', description: '', roadmap: null, ability: null, videos: [], gallery: [] };
+
+/** path รูปใต้โฟลเดอร์ images/ — ระบบเดิมบางสาขาไม่มีชื่อโฟลเดอร์ (images//xxx.jpg) */
+function imagePath(...parts: (string | undefined)[]) {
+  return ['images', ...parts.map((p) => String(p || '').trim())].filter(Boolean).join('/').replace(/\/{2,}/g, '/');
+}
+
+export function getMajorDetail(majorId: number): Promise<MajorDetail> {
+  return safe('majorDetail', async () => {
+    // SELECT * เพราะฐานข้อมูลใหม่มีคอลัมน์ major_roadmap / major_ability เพิ่มจากของเดิม
+    const rows = await query<Record<string, unknown>>('SELECT * FROM major WHERE id = ? LIMIT 1', [majorId]);
+    const r = rows[0];
+    if (!r) return MAJOR_EMPTY;
+    const str = (k: string) => String(r[k] ?? '').trim();
+    const folder = str('major_folder_image');
+    const img = (file: string) => (file ? mediaUrlOrLive(imagePath(folder, file)) : null);
+    const videos = [str('major_vdo'), str('major_vdo2')].filter(Boolean).map((v) => mediaUrlOrLive(`vdo/${v}`));
+
+    const gal = await query<{ img_path: string }>(
+      'SELECT img_path FROM major_gallery WHERE major_id = ? ORDER BY gallery_order ASC, gallery_id ASC',
+      [majorId],
+    );
+    const gallery = gal
+      .map((g) => (g.img_path ? mediaUrlIfExists(imagePath(g.img_path)) : null))
+      .filter((u): u is string => Boolean(u));
+
+    return {
+      name: cleanMajorName(str('major_name')),
+      description: str('major_description').replace(/\r\n?/g, '\n').replace(/[ \t]+/g, ' ').replace(/\n /g, '\n'),
+      roadmap: img(str('major_roadmap')),
+      ability: img(str('major_ability')),
+      videos,
+      gallery,
+    };
+  }, MAJOR_EMPTY);
 }

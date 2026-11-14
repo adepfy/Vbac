@@ -16,22 +16,22 @@ export default function Footer({ about }: { about: About }) {
 <span style={{ fontWeight: "600", color: "#C8102E" }}>
 {"หลักสูตร / สาขา"}
 </span>
-<a href="/vbac_next/#programs">
+<a href="/vbac_next/programs/it">
 {"เทคโนโลยีสารสนเทศ"}
 </a>
-<a href="/vbac_next/#programs">
+<a href="/vbac_next/programs/digital-business">
 {"ธุรกิจดิจิทัล"}
 </a>
-<a href="/vbac_next/#programs">
+<a href="/vbac_next/programs/digital-graphics">
 {"ดิจิทัลกราฟิก"}
 </a>
-<a href="/vbac_next/#programs">
+<a href="/vbac_next/programs/marketing">
 {"การตลาด"}
 </a>
-<a href="/vbac_next/#programs">
+<a href="/vbac_next/programs/accounting">
 {"การบัญชี"}
 </a>
-<a href="/vbac_next/#programs">
+<a href="/vbac_next/programs">
 {"ดูทั้ง 8 สาขา"}
 </a>
 </div>

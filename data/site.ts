@@ -16,48 +16,56 @@ export type Faq = { q: string; a: string };
 export const programs: Program[] = [
   {
     "code": "IT",
+    "slug": "it",
     "th": "เทคโนโลยีสารสนเทศ",
     "en": "Information Technology",
     "color": "#1F4FD1"
   },
   {
     "code": "DBT",
+    "slug": "digital-business",
     "th": "เทคโนโลยีธุรกิจดิจิทัล",
     "en": "Digital Business Technology",
     "color": "#7C3AED"
   },
   {
     "code": "DG",
+    "slug": "digital-graphics",
     "th": "ดิจิทัลกราฟิก",
     "en": "Digital Graphics",
     "color": "#C2410C"
   },
   {
     "code": "MK",
+    "slug": "marketing",
     "th": "การตลาด",
     "en": "Marketing",
     "color": "#BE185D"
   },
   {
     "code": "TOUR",
+    "slug": "tourism",
     "th": "การท่องเที่ยว",
     "en": "Tourism",
     "color": "#0F766E"
   },
   {
     "code": "AC",
+    "slug": "accounting",
     "th": "การบัญชี",
     "en": "Accounting",
     "color": "#15803D"
   },
   {
     "code": "LOG",
+    "slug": "logistics",
     "th": "โลจิสติกส์และซัพพลายเชน",
     "en": "Logistics and Supply Chain",
     "color": "#B45309"
   },
   {
     "code": "MG",
+    "slug": "management",
     "th": "การจัดการ",
     "en": "Management",
     "color": "#C8102E"

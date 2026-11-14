@@ -413,3 +413,66 @@ html{scroll-behavior:smooth}
 .ln-official a strong{font-size:18px;color:#C8102E}
 .ln-official a span{font-size:14px;color:#4A403C}
 @media (max-width:560px){.ln-cta{padding:28px 24px}.ln-faq p{padding-left:0}.ln-doc{padding:16px}}
+
+/* ---------- หน้าหลักสูตร (/programs, /programs/[slug]) ---------- */
+.ln-btn-yellow{background:#FFC21A;color:#120A0B}
+.ln-btn-red{background:#C8102E;color:#FFFFFF}
+.ln-btn-outline{border:2px solid #C8102E;color:#C8102E}
+.pg-grid{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.pg-card{--pc:#C8102E;position:relative;overflow:hidden;height:100%;box-sizing:border-box;min-height:290px;display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:26px;background:var(--pc);color:#FFFFFF}
+.pg-card-top{position:relative;display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:auto}
+.pg-code{display:inline-block;align-self:flex-start;font-weight:700;font-size:13px;border-radius:9px;background:#FFFFFF;color:var(--pc,#C8102E);padding:4px 10px}
+.pg-code-solid{background:var(--pc,#C8102E);color:#FFFFFF;font-size:15px;padding:6px 14px;border-radius:12px}
+.pg-levels{display:flex;gap:6px}
+.pg-levels span{font-size:12px;font-weight:600;border:1.5px solid rgba(255,255,255,.7);border-radius:999px;padding:2px 9px}
+.pg-mark{position:absolute;right:-10px;top:30px;font-weight:700;font-size:110px;line-height:1;color:rgba(255,255,255,.12);pointer-events:none}
+.pg-card strong{position:relative;font-size:23px;line-height:1.25;margin-top:56px}
+.pg-en{position:relative;font-size:13px;color:rgba(255,255,255,.85)}
+.pg-tag{position:relative;font-size:14px;line-height:1.55;color:rgba(255,255,255,.95);margin-top:4px}
+.pg-more{position:relative;display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:600;font-size:14px;color:#FFC21A}
+.pg-levelrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.pg-level{border:1px solid #F0DCDA;border-radius:26px;padding:24px;background:#FFFFFF}
+.pg-level-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.pg-level-head div{display:flex;flex-direction:column;gap:2px}
+.pg-level-head strong{font-size:18px}
+.pg-level-head span:not(.ab-badge){font-size:14px;color:#6B5F5A}
+.pg-level ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.pg-level a{--pc:#C8102E;display:inline-flex;align-items:center;gap:8px;background:#FDEEEF;border-radius:999px;padding:7px 14px;font-size:14px}
+.pg-level a::before{content:"";width:9px;height:9px;border-radius:999px;background:var(--pc)}
+.pg-level a:hover{background:#C8102E;color:#FFFFFF}
+.pg-cta{margin-top:8px}
+.pg-badges{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.pg-badges .ab-kicker{align-self:center}
+.pg-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.pg-learn{flex:1 1 380px;min-width:0;background:var(--pc,#C8102E);color:#FFFFFF;border-radius:30px;padding:28px 30px;box-shadow:0 24px 50px -24px rgba(18,10,11,.45)}
+.pg-learn h3{margin:0 0 16px;font-size:22px}
+.pg-learn ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.pg-learn li{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.12);border-radius:16px;padding:12px 14px;font-size:16px;font-weight:500}
+.pg-learn-num{width:38px;height:38px;flex-shrink:0;border-radius:12px;background:#FFFFFF;color:var(--pc,#C8102E);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.pg-posters{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:start}
+.pg-posters a{display:block;border-radius:24px;overflow:hidden;border:1px solid #F0DCDA;background:#FFFFFF}
+.pg-posters img{width:100%;height:auto;display:block}
+.pg-videos{display:grid;gap:16px}
+.pg-videos-2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.pg-video{width:100%;max-height:640px;border-radius:24px;background:#120A0B;display:block;box-shadow:0 24px 50px -24px rgba(18,10,11,.5)}
+.pg-careers{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.pg-careers li{display:flex;align-items:center;gap:12px;background:#FFFFFF;border:1px solid #F0DCDA;border-radius:18px;padding:14px 16px;font-weight:500}
+.pg-careers li span{width:40px;height:40px;flex-shrink:0;border-radius:12px;background:var(--pc,#C8102E);color:#FFFFFF;display:flex;align-items:center;justify-content:center}
+.pg-further{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;background:#120A0B;color:#FFFFFF;border-radius:20px;padding:16px 20px}
+.pg-further strong{color:#FFC21A}
+.pg-further span{font-size:15px;line-height:1.6}
+.pg-extras{margin:24px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;align-items:start}
+.pg-extras a{display:block;border-radius:20px;overflow:hidden;border:1px solid #F0DCDA;background:#FFFFFF}
+.pg-extras img{width:100%;height:auto;display:block}
+.pg-gallery{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.pg-gallery a{display:block;aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:#F3E3E0}
+.pg-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.pg-gallery a:hover img{transform:scale(1.06)}
+.pg-more-gallery{margin-top:14px}
+.pg-more-gallery summary{list-style:none;cursor:pointer;width:max-content;margin:0 auto 14px;height:46px;padding:0 22px;border-radius:999px;border:2px solid #C8102E;color:#C8102E;font-weight:600;display:flex;align-items:center}
+.pg-more-gallery summary::-webkit-details-marker{display:none}
+.pg-more-gallery[open] summary{display:none}
+.pg-others{margin:0 0 24px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.pg-others a{--pc:#C8102E;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;border:1px solid #F0DCDA;border-left:6px solid var(--pc);border-radius:18px;padding:14px 16px}
+.pg-others strong{font-size:16px}
+@media (max-width:560px){.pg-card{min-height:250px}.pg-card strong{margin-top:36px}.pg-learn{padding:22px}.pg-gallery{grid-template-columns:repeat(2,1fr)}}

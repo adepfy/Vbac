@@ -68,7 +68,7 @@ export default function Programs() {
 </div>
 <div style={{ maxWidth: "1180px", margin: "0 auto", padding: "0 20px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "14px" }}>
 {programs.map((p, idx) => (<Fragment key={idx}>
-<a href="#program" className="program-card card" style={{ background: p.color }}>
+<a href={`/vbac_next/programs/${p.slug}`} className="program-card card" style={{ background: p.color }}>
 <span className="program-card-mark" aria-hidden="true">
 {p.code}
 </span>
