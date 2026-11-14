@@ -5,8 +5,8 @@ import { quotients } from '@/data/site';
 export default function Quotients() {
   return (
     <>
-<div aria-hidden="true" style={{ lineHeight: "0", marginTop: "72px", background: "transparent" }}>
-<svg viewBox="0 0 1440 120" preserveAspectRatio="none" style={{ width: "100%", height: "110px", display: "block" }}>
+<div aria-hidden="true" style={{ lineHeight: "0", marginTop: "36px", background: "transparent" }}>
+<svg viewBox="0 0 1440 120" preserveAspectRatio="none" style={{ width: "100%", height: "84px", display: "block" }}>
 <path d="M0 40 C 120 6 240 6 360 40 C 480 74 600 74 720 40 C 840 6 960 6 1080 40 C 1200 74 1320 74 1440 40 L1440 120 L0 120 Z" fill="#F8C9D0" />
 <path d="M0 82 C 160 40 320 40 480 72 C 640 104 800 104 960 72 C 1120 40 1280 40 1440 78 L1440 120 L0 120 Z" fill="#FDEEEF" />
 </svg>
@@ -50,7 +50,7 @@ export default function Quotients() {
 </svg>
 </span>
 <section id="about" style={{ background: "#FDEEEF" }}>
-<div style={{ maxWidth: "1180px", margin: "0 auto", padding: "80px 20px", display: "flex", flexWrap: "wrap", gap: "44px", alignItems: "center" }}>
+<div style={{ maxWidth: "1180px", margin: "0 auto", padding: "56px 20px", display: "flex", flexWrap: "wrap", gap: "32px", alignItems: "center" }}>
 <div style={{ flex: "1 1 340px", minWidth: "0", display: "flex", flexDirection: "column", gap: "18px" }}>
 <span style={{ alignSelf: "flex-start", background: "#120A0B", color: "#FFC21A", fontWeight: "600", fontSize: "14px", borderRadius: "999px", padding: "5px 14px" }}>
 {"ที่ VBAC เรา..."}

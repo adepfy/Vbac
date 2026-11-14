@@ -3,7 +3,7 @@
 export default function Bento() {
   return (
     <>
-<section aria-label="ภาพรวมวิทยาลัย" style={{ maxWidth: "1180px", margin: "0 auto", padding: "88px 20px 0" }}>
+<section aria-label="ภาพรวมวิทยาลัย" style={{ maxWidth: "1180px", margin: "0 auto", padding: "56px 20px 0" }}>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(4, minmax(0, 1fr))", gridAutoRows: "210px", gap: "12px" }}>
 <a href="#alumni" className="card" style={{ gridColumn: "span 2", gridRow: "span 2", position: "relative", borderRadius: "24px", overflow: "hidden", display: "flex", alignItems: "flex-end", color: "#FFFFFF", background: "#2A1B1E" }}>
 <img src="/vbac_next/images/grad.jpg" alt="บัณฑิต VBAC" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />

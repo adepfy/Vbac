@@ -273,3 +273,45 @@ export const ADMISSION_HOTLINES = [
   { name: 'อ.สนิ', tel: '089-115-2525' },
   { name: 'อ.มิ้น', tel: '099-291-6253' },
 ];
+
+/* ---------- บุคลากร (หน้า /staff) — โครงเดียวกับหน้า teacher ของระบบเดิม ---------- */
+export type StaffMember = { name: string; position: string; photo: string };
+export type Staff = {
+  executives: Person[];
+  deputies: StaffMember[];
+  supervisors: StaffMember[];
+  teachers: StaffMember[];
+  structure: string | null;
+};
+function toStaff(rows: PersonalRow[]): StaffMember[] {
+  // รูปบุคลากรของระบบเดิมเป็นการ์ดที่มีชื่อ-ตำแหน่งอยู่ในรูปแล้ว จึงแสดงเฉพาะคนที่มีไฟล์รูปจริง
+  return rows
+    .map((r) => ({
+      name: clean(r.personal_name),
+      position: clean(r.personal_position),
+      photo: (r.personal_file && mediaUrlIfExists(`images/Teacher/${r.personal_file}`)) || '',
+    }))
+    .filter((p) => p.photo);
+}
+export async function getStaff(): Promise<Staff> {
+  const executives = await getExecutives();
+  return safe(
+    'staff',
+    async () => {
+      const rows = await query<PersonalRow & { personal_order: number }>(
+        `SELECT personal_status, personal_name, personal_position, personal_file, personal_tel, personal_order
+         FROM personal WHERE personal_status IN ('deputypresident','supervisor','teacher')
+         ORDER BY personal_order ASC, personal_id ASC`,
+      );
+      const by = (s: string) => toStaff(rows.filter((r) => r.personal_status === s));
+      return {
+        executives,
+        deputies: by('deputypresident'),
+        supervisors: by('supervisor'),
+        teachers: by('teacher'),
+        structure: mediaUrlIfExists('images/stucture_new.png'),
+      };
+    },
+    { executives, deputies: [], supervisors: [], teachers: [], structure: null },
+  );
+}

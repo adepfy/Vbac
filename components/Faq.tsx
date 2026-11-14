@@ -5,7 +5,7 @@ import { faqs } from '@/data/site';
 export default function Faq() {
   return (
     <>
-<section id="faq" aria-labelledby="h-faq" style={{ maxWidth: "900px", margin: "0 auto", padding: "96px 20px 0", display: "flex", flexDirection: "column", gap: "28px" }}>
+<section id="faq" aria-labelledby="h-faq" style={{ maxWidth: "900px", margin: "0 auto", padding: "64px 20px 0", display: "flex", flexDirection: "column", gap: "24px" }}>
 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", textAlign: "center" }}>
 <span style={{ width: "64px", height: "64px", borderRadius: "20px", background: ACCENT, color: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "700", fontSize: "32px", transform: "rotate(-8deg)" }} aria-hidden="true">
 {"?"}

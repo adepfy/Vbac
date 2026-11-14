@@ -3,8 +3,8 @@ import { ACCENT } from '@/data/site';
 export default function Network() {
   return (
     <>
-<div aria-hidden="true" style={{ lineHeight: "0", marginTop: "72px", background: "transparent" }}>
-<svg viewBox="0 0 1440 120" preserveAspectRatio="none" style={{ width: "100%", height: "110px", display: "block" }}>
+<div aria-hidden="true" style={{ lineHeight: "0", marginTop: "36px", background: "transparent" }}>
+<svg viewBox="0 0 1440 120" preserveAspectRatio="none" style={{ width: "100%", height: "84px", display: "block" }}>
 <path d="M0 40 C 120 6 240 6 360 40 C 480 74 600 74 720 40 C 840 6 960 6 1080 40 C 1200 74 1320 74 1440 40 L1440 120 L0 120 Z" fill="#F8C9D0" />
 <path d="M0 82 C 160 40 320 40 480 72 C 640 104 800 104 960 72 C 1120 40 1280 40 1440 78 L1440 120 L0 120 Z" fill="#FDEEEF" />
 </svg>
@@ -47,8 +47,8 @@ export default function Network() {
 <circle cx="54" cy="54" r="2.5" fill="#F2A900" />
 </svg>
 </span>
-<section aria-labelledby="h-network" style={{ paddingTop: "40px" }}>
-<div style={{ position: "relative", height: "64px", marginBottom: "32px" }}>
+<section aria-labelledby="h-network" style={{ paddingTop: "24px" }}>
+<div style={{ position: "relative", height: "56px", marginBottom: "20px" }}>
 <div aria-hidden="true" className="tbar" style={{ position: "absolute", inset: "0" }} />
 <div style={{ position: "relative", maxWidth: "1180px", height: "100%", margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "12px" }}>
 <h2 id="h-network" style={{ margin: "0", fontWeight: "700", fontSize: "32px" }}>

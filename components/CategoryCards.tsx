@@ -57,7 +57,7 @@ export default function CategoryCards() {
 </span>
 </span>
 </a>
-<a href="#personnel" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
+<a href="/vbac_next/staff" className="card" style={{ position: "relative", height: "176px", borderRadius: "24px", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "18px", color: "#FFFFFF", background: "#A30D25", border: "3px solid #FFFFFF", boxShadow: "0 18px 38px -16px rgba(120,10,25,.55)" }}>
 <img src="/vbac_next/images/expert.jpg" alt="" aria-hidden="true" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
 <span aria-hidden="true" style={{ position: "absolute", inset: "0", background: "linear-gradient(to top, rgba(140,8,28,.96) 18%, rgba(200,16,46,.55) 100%)" }}>
 </span>

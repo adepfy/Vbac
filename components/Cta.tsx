@@ -3,7 +3,7 @@ import { ACCENT } from '@/data/site';
 export default function Cta() {
   return (
     <>
-<section id="apply" style={{ maxWidth: "1180px", margin: "0 auto", padding: "96px 20px 40px" }}>
+<section id="apply" style={{ maxWidth: "1180px", margin: "0 auto", padding: "64px 20px 32px" }}>
 <div className="dots ondark" style={{ position: "relative", overflow: "hidden", isolation: "isolate", borderRadius: "36px", backgroundColor: ACCENT, color: "#FFFFFF", padding: "clamp(32px, 5vw, 64px)", display: "flex", flexWrap: "wrap", gap: "28px", alignItems: "center", justifyContent: "space-between" }}>
 <div className="net" aria-hidden="true" style={{ right: "-40px", top: "-30px", width: "520px", height: "357px", opacity: ".3", zIndex: "-1" }}>
 </div>

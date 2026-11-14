@@ -5,8 +5,8 @@ import { idols } from '@/data/site';
 export default function Idols() {
   return (
     <>
-<section aria-labelledby="h-idols" style={{ paddingTop: "40px" }}>
-<div style={{ position: "relative", height: "64px", marginBottom: "32px" }}>
+<section aria-labelledby="h-idols" style={{ paddingTop: "24px" }}>
+<div style={{ position: "relative", height: "56px", marginBottom: "20px" }}>
 <div aria-hidden="true" className="tbar" style={{ position: "absolute", inset: "0" }} />
 <div style={{ position: "relative", maxWidth: "1180px", height: "100%", margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "12px" }}>
 <h2 id="h-idols" style={{ margin: "0", fontWeight: "700", fontSize: "32px" }}>

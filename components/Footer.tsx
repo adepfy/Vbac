@@ -48,8 +48,8 @@ export default function Footer({ about }: { about: About }) {
 <a href="/vbac_next/about#contact">
 {"แผนที่วิทยาลัย"}
 </a>
-<a href="/vbac_next/about#executives">
-{"ผู้บริหาร"}
+<a href="/vbac_next/staff">
+{"ผู้บริหารและบุคลากร"}
 </a>
 </div>
 <div style={{ flex: "1 1 170px", display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>

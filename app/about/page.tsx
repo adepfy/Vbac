@@ -193,6 +193,8 @@ export default async function AboutPage() {
               </figure>
             ))}
           </div>
+          <div className="ab-wrap"><a href="/vbac_next/staff" className="nw-all">ดูผู้บริหารและบุคลากรทั้งหมด →</a></div>
+
         </section>
 
         {/* ติดต่อ & การเดินทาง (ที่อยู่/เบอร์จากตาราง about, ผู้ติดต่อจากตาราง personal) */}
